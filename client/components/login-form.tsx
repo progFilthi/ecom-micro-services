@@ -16,7 +16,7 @@ export function LoginForm({
   const handleGoogleLogin = async () => {
     await authClient.signIn.social({
       provider: "google",
-      callbackURL: "http://localhost:3000",
+      callbackURL: "http://localhost:3000/admin",
       fetchOptions: {
         onSuccess: () => {
           toast.success("Logged in with google successfully");
